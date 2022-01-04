@@ -43,10 +43,13 @@ extension SceneDelegate {
         navigator.register("app://asset/<address>/detail") { url, values, context in
             let storyboard = UIStoryboard(name: "Layout", bundle: .main)
             guard
-                let vc = storyboard.instantiateViewController(withIdentifier: "CollectionVC") as? CollectionVC else {
-                    return nil
-                }
-            vc.viewModel = CollectionViewModel()
+                let vc = storyboard.instantiateViewController(withIdentifier: "CollectionVC") as? CollectionVC,
+                let context = context as? CollectionCoordinator.Context
+            else {
+                return nil
+            }
+            vc.viewModel = CollectionViewModel(asset: context.asset)
+            vc.openPermalink = context.openPermalink
             return vc
         }
     }

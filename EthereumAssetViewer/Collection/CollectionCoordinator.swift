@@ -10,15 +10,25 @@ import URLNavigator
 
 class CollectionCoordinator {
     
-    let asset: String
+    typealias Context = (asset: Asset, openPermalink: ((URL) -> Void))
+    
+    let owner: String
+    let asset: Asset
     let navigator: Navigator
     
-    init (asset: String, navigator: Navigator) {
+    init (owner: String, asset: Asset, navigator: Navigator) {
+        self.owner = owner
         self.asset = asset
         self.navigator = navigator
     }
     
     func start() {
-        navigator.push("app://asset/\(asset)/detail")
+        let context: Context = (
+            asset,
+            { link in
+                UIApplication.shared.open(link, options: [:], completionHandler: nil)
+            }
+        )
+        navigator.push("app://asset/\(owner)/detail", context: context)
     }
 }

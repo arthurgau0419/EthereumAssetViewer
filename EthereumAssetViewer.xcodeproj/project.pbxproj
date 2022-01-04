@@ -25,6 +25,10 @@
 		8E40BB8927840D080035895D /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB8827840D080035895D /* CollectionVC.swift */; };
 		8E40BB8B27840D130035895D /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB8A27840D130035895D /* CollectionViewModel.swift */; };
 		8E40BB9027841AB20035895D /* UIScrollView+BottomRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB8F27841AB10035895D /* UIScrollView+BottomRefreshControl.m */; };
+		8E40BB9327842D0F0035895D /* AssetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB9227842D0E0035895D /* AssetProvider.swift */; };
+		8E40BB9527842D470035895D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB9427842D470035895D /* Models.swift */; };
+		8E40BB9727842FD50035895D /* OpenSeaAssetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB9627842FD50035895D /* OpenSeaAssetProvider.swift */; };
+		8E40BB99278442640035895D /* AssetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB98278442640035895D /* AssetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		8E40BB8D27841AB10035895D /* EthereumAssetViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EthereumAssetViewer-Bridging-Header.h"; sourceTree = "<group>"; };
 		8E40BB8E27841AB10035895D /* UIScrollView+BottomRefreshControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+BottomRefreshControl.h"; sourceTree = "<group>"; };
 		8E40BB8F27841AB10035895D /* UIScrollView+BottomRefreshControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+BottomRefreshControl.m"; sourceTree = "<group>"; };
+		8E40BB9227842D0E0035895D /* AssetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetProvider.swift; sourceTree = "<group>"; };
+		8E40BB9427842D470035895D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		8E40BB9627842FD50035895D /* OpenSeaAssetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSeaAssetProvider.swift; sourceTree = "<group>"; };
+		8E40BB98278442640035895D /* AssetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 		8E40BB562783ED780035895D /* EthereumAssetViewer */ = {
 			isa = PBXGroup;
 			children = (
+				8E40BB9127842CC80035895D /* AssetProvider */,
 				8E40BB8C27841A810035895D /* CCBottomRefreshControl */,
 				8E40BB572783ED780035895D /* AppDelegate.swift */,
 				8E40BB592783ED780035895D /* SceneDelegate.swift */,
@@ -102,6 +111,7 @@
 				8E40BB83278403EC0035895D /* AssetCoordinator.swift */,
 				8E40BB7B2783F6F00035895D /* AssetVC.swift */,
 				8E40BB812784008E0035895D /* AssetViewModel.swift */,
+				8E40BB98278442640035895D /* AssetCell.swift */,
 			);
 			path = Asset;
 			sourceTree = "<group>";
@@ -123,6 +133,16 @@
 				8E40BB8F27841AB10035895D /* UIScrollView+BottomRefreshControl.m */,
 			);
 			path = CCBottomRefreshControl;
+			sourceTree = "<group>";
+		};
+		8E40BB9127842CC80035895D /* AssetProvider */ = {
+			isa = PBXGroup;
+			children = (
+				8E40BB9227842D0E0035895D /* AssetProvider.swift */,
+				8E40BB9627842FD50035895D /* OpenSeaAssetProvider.swift */,
+				8E40BB9427842D470035895D /* Models.swift */,
+			);
+			path = AssetProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,10 +234,14 @@
 			files = (
 				8E40BB9027841AB20035895D /* UIScrollView+BottomRefreshControl.m in Sources */,
 				8E40BB582783ED780035895D /* AppDelegate.swift in Sources */,
+				8E40BB99278442640035895D /* AssetCell.swift in Sources */,
 				8E40BB5A2783ED780035895D /* SceneDelegate.swift in Sources */,
+				8E40BB9527842D470035895D /* Models.swift in Sources */,
+				8E40BB9327842D0F0035895D /* AssetProvider.swift in Sources */,
 				8E40BB862784072F0035895D /* CollectionCoordinator.swift in Sources */,
 				8E40BB84278403EC0035895D /* AssetCoordinator.swift in Sources */,
 				8E40BB8B27840D130035895D /* CollectionViewModel.swift in Sources */,
+				8E40BB9727842FD50035895D /* OpenSeaAssetProvider.swift in Sources */,
 				8E40BB8927840D080035895D /* CollectionVC.swift in Sources */,
 				8E40BB7C2783F6F00035895D /* AssetVC.swift in Sources */,
 				8E40BB822784008E0035895D /* AssetViewModel.swift in Sources */,

@@ -26,13 +26,13 @@ class AssetCoordinator {
         window.makeKeyAndVisible()
         guard let assetVC = navigator.viewController(for: "app://asset/\(address)", context: nil) as? AssetVC else { return }
         window.rootViewController = UINavigationController(rootViewController: assetVC)
-        assetVC.openCollection = { [weak self] _ in
-            self?.openCollection()
+        assetVC.openCollection = { [weak self] asset in
+            self?.openCollection(asset: asset)
         }
     }
     
-    func openCollection() {
-        collectionCoordinator = CollectionCoordinator(asset: address, navigator: navigator)
+    func openCollection(asset: Asset) {
+        collectionCoordinator = CollectionCoordinator(owner: address, asset: asset, navigator: navigator)
         collectionCoordinator?.start()
     }
 }
