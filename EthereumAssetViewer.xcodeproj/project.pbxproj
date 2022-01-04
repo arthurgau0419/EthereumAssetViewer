@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E40BB582783ED780035895D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB572783ED780035895D /* AppDelegate.swift */; };
+		8E40BB5A2783ED780035895D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB592783ED780035895D /* SceneDelegate.swift */; };
+		8E40BB612783ED7D0035895D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E40BB602783ED7D0035895D /* Assets.xcassets */; };
+		8E40BB642783ED7D0035895D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E40BB622783ED7D0035895D /* LaunchScreen.storyboard */; };
+		8E40BB6D2783EEBB0035895D /* URLNavigator in Frameworks */ = {isa = PBXBuildFile; productRef = 8E40BB6C2783EEBB0035895D /* URLNavigator */; };
+		8E40BB702783EF040035895D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8E40BB6F2783EF040035895D /* Alamofire */; };
+		8E40BB732783EF3D0035895D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 8E40BB722783EF3D0035895D /* RxCocoa */; };
+		8E40BB752783EF3D0035895D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8E40BB742783EF3D0035895D /* RxSwift */; };
+		8E40BB782783F0CB0035895D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 8E40BB772783F0CB0035895D /* Kingfisher */; };
+		8E40BB7A2783F6C20035895D /* Layout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E40BB792783F6C20035895D /* Layout.storyboard */; };
+		8E40BB7C2783F6F00035895D /* AssetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB7B2783F6F00035895D /* AssetVC.swift */; };
+		8E40BB7F2783FEAC0035895D /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 8E40BB7E2783FEAC0035895D /* RxDataSources */; };
+		8E40BB822784008E0035895D /* AssetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB812784008E0035895D /* AssetViewModel.swift */; };
+		8E40BB84278403EC0035895D /* AssetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB83278403EC0035895D /* AssetCoordinator.swift */; };
+		8E40BB862784072F0035895D /* CollectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB852784072F0035895D /* CollectionCoordinator.swift */; };
+		8E40BB8927840D080035895D /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB8827840D080035895D /* CollectionVC.swift */; };
+		8E40BB8B27840D130035895D /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB8A27840D130035895D /* CollectionViewModel.swift */; };
+		8E40BB9027841AB20035895D /* UIScrollView+BottomRefreshControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E40BB8F27841AB10035895D /* UIScrollView+BottomRefreshControl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E40BB542783ED780035895D /* EthereumAssetViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthereumAssetViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E40BB572783ED780035895D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E40BB592783ED780035895D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8E40BB602783ED7D0035895D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E40BB632783ED7D0035895D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E40BB652783ED7D0035895D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E40BB792783F6C20035895D /* Layout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Layout.storyboard; sourceTree = "<group>"; };
+		8E40BB7B2783F6F00035895D /* AssetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetVC.swift; sourceTree = "<group>"; };
+		8E40BB812784008E0035895D /* AssetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewModel.swift; sourceTree = "<group>"; };
+		8E40BB83278403EC0035895D /* AssetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCoordinator.swift; sourceTree = "<group>"; };
+		8E40BB852784072F0035895D /* CollectionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCoordinator.swift; sourceTree = "<group>"; };
+		8E40BB8827840D080035895D /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
+		8E40BB8A27840D130035895D /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		8E40BB8D27841AB10035895D /* EthereumAssetViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EthereumAssetViewer-Bridging-Header.h"; sourceTree = "<group>"; };
+		8E40BB8E27841AB10035895D /* UIScrollView+BottomRefreshControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+BottomRefreshControl.h"; sourceTree = "<group>"; };
+		8E40BB8F27841AB10035895D /* UIScrollView+BottomRefreshControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+BottomRefreshControl.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E40BB512783ED780035895D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E40BB732783EF3D0035895D /* RxCocoa in Frameworks */,
+				8E40BB6D2783EEBB0035895D /* URLNavigator in Frameworks */,
+				8E40BB752783EF3D0035895D /* RxSwift in Frameworks */,
+				8E40BB7F2783FEAC0035895D /* RxDataSources in Frameworks */,
+				8E40BB702783EF040035895D /* Alamofire in Frameworks */,
+				8E40BB782783F0CB0035895D /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E40BB4B2783ED780035895D = {
+			isa = PBXGroup;
+			children = (
+				8E40BB562783ED780035895D /* EthereumAssetViewer */,
+				8E40BB552783ED780035895D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E40BB552783ED780035895D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E40BB542783ED780035895D /* EthereumAssetViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E40BB562783ED780035895D /* EthereumAssetViewer */ = {
+			isa = PBXGroup;
+			children = (
+				8E40BB8C27841A810035895D /* CCBottomRefreshControl */,
+				8E40BB572783ED780035895D /* AppDelegate.swift */,
+				8E40BB592783ED780035895D /* SceneDelegate.swift */,
+				8E40BB792783F6C20035895D /* Layout.storyboard */,
+				8E40BB802784007D0035895D /* Asset */,
+				8E40BB8727840CEB0035895D /* Collection */,
+				8E40BB602783ED7D0035895D /* Assets.xcassets */,
+				8E40BB622783ED7D0035895D /* LaunchScreen.storyboard */,
+				8E40BB652783ED7D0035895D /* Info.plist */,
+				8E40BB8D27841AB10035895D /* EthereumAssetViewer-Bridging-Header.h */,
+			);
+			path = EthereumAssetViewer;
+			sourceTree = "<group>";
+		};
+		8E40BB802784007D0035895D /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				8E40BB83278403EC0035895D /* AssetCoordinator.swift */,
+				8E40BB7B2783F6F00035895D /* AssetVC.swift */,
+				8E40BB812784008E0035895D /* AssetViewModel.swift */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		8E40BB8727840CEB0035895D /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				8E40BB852784072F0035895D /* CollectionCoordinator.swift */,
+				8E40BB8827840D080035895D /* CollectionVC.swift */,
+				8E40BB8A27840D130035895D /* CollectionViewModel.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		8E40BB8C27841A810035895D /* CCBottomRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				8E40BB8E27841AB10035895D /* UIScrollView+BottomRefreshControl.h */,
+				8E40BB8F27841AB10035895D /* UIScrollView+BottomRefreshControl.m */,
+			);
+			path = CCBottomRefreshControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E40BB532783ED780035895D /* EthereumAssetViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E40BB682783ED7D0035895D /* Build configuration list for PBXNativeTarget "EthereumAssetViewer" */;
+			buildPhases = (
+				8E40BB502783ED780035895D /* Sources */,
+				8E40BB512783ED780035895D /* Frameworks */,
+				8E40BB522783ED780035895D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EthereumAssetViewer;
+			packageProductDependencies = (
+				8E40BB6C2783EEBB0035895D /* URLNavigator */,
+				8E40BB6F2783EF040035895D /* Alamofire */,
+				8E40BB722783EF3D0035895D /* RxCocoa */,
+				8E40BB742783EF3D0035895D /* RxSwift */,
+				8E40BB772783F0CB0035895D /* Kingfisher */,
+				8E40BB7E2783FEAC0035895D /* RxDataSources */,
+			);
+			productName = EthereumAssetViewer;
+			productReference = 8E40BB542783ED780035895D /* EthereumAssetViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E40BB4C2783ED780035895D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8E40BB532783ED780035895D = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+				};
+			};
+			buildConfigurationList = 8E40BB4F2783ED780035895D /* Build configuration list for PBXProject "EthereumAssetViewer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E40BB4B2783ED780035895D;
+			packageReferences = (
+				8E40BB6B2783EEBB0035895D /* XCRemoteSwiftPackageReference "URLNavigator" */,
+				8E40BB6E2783EF040035895D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8E40BB712783EF3D0035895D /* XCRemoteSwiftPackageReference "RxSwift" */,
+				8E40BB762783F0CB0035895D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				8E40BB7D2783FEAC0035895D /* XCRemoteSwiftPackageReference "RxDataSources" */,
+			);
+			productRefGroup = 8E40BB552783ED780035895D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E40BB532783ED780035895D /* EthereumAssetViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E40BB522783ED780035895D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E40BB642783ED7D0035895D /* LaunchScreen.storyboard in Resources */,
+				8E40BB612783ED7D0035895D /* Assets.xcassets in Resources */,
+				8E40BB7A2783F6C20035895D /* Layout.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E40BB502783ED780035895D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E40BB9027841AB20035895D /* UIScrollView+BottomRefreshControl.m in Sources */,
+				8E40BB582783ED780035895D /* AppDelegate.swift in Sources */,
+				8E40BB5A2783ED780035895D /* SceneDelegate.swift in Sources */,
+				8E40BB862784072F0035895D /* CollectionCoordinator.swift in Sources */,
+				8E40BB84278403EC0035895D /* AssetCoordinator.swift in Sources */,
+				8E40BB8B27840D130035895D /* CollectionViewModel.swift in Sources */,
+				8E40BB8927840D080035895D /* CollectionVC.swift in Sources */,
+				8E40BB7C2783F6F00035895D /* AssetVC.swift in Sources */,
+				8E40BB822784008E0035895D /* AssetViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E40BB622783ED7D0035895D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E40BB632783ED7D0035895D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E40BB662783ED7D0035895D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E40BB672783ED7D0035895D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E40BB692783ED7D0035895D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EthereumAssetViewer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = obicat.EthereumAssetViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EthereumAssetViewer/EthereumAssetViewer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E40BB6A2783ED7D0035895D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EthereumAssetViewer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = obicat.EthereumAssetViewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "EthereumAssetViewer/EthereumAssetViewer-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E40BB4F2783ED780035895D /* Build configuration list for PBXProject "EthereumAssetViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E40BB662783ED7D0035895D /* Debug */,
+				8E40BB672783ED7D0035895D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E40BB682783ED7D0035895D /* Build configuration list for PBXNativeTarget "EthereumAssetViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E40BB692783ED7D0035895D /* Debug */,
+				8E40BB6A2783ED7D0035895D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8E40BB6B2783EEBB0035895D /* XCRemoteSwiftPackageReference "URLNavigator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/URLNavigator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		8E40BB6E2783EF040035895D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		8E40BB712783EF3D0035895D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		8E40BB762783F0CB0035895D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		8E40BB7D2783FEAC0035895D /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8E40BB6C2783EEBB0035895D /* URLNavigator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E40BB6B2783EEBB0035895D /* XCRemoteSwiftPackageReference "URLNavigator" */;
+			productName = URLNavigator;
+		};
+		8E40BB6F2783EF040035895D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E40BB6E2783EF040035895D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8E40BB722783EF3D0035895D /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E40BB712783EF3D0035895D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		8E40BB742783EF3D0035895D /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E40BB712783EF3D0035895D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		8E40BB772783F0CB0035895D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E40BB762783F0CB0035895D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		8E40BB7E2783FEAC0035895D /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8E40BB7D2783FEAC0035895D /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8E40BB4C2783ED780035895D /* Project object */;
+}
